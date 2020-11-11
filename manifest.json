@@ -1,0 +1,35 @@
+{
+    "name": "positionChecker",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {"32": "icon.png"},
+    "browser_action": {
+    "name": "show positions in google"
+    },
+    "background":{
+        "scripts":["/js/background.js"],
+        "persistent": false
+    },
+    "permissions":[
+        "activeTab",
+        "tabs",
+        "<all_urls>"
+    ],
+    "incognito":"split",
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/search?igu=*"],
+            "js": ["/js/contentscript.js"],
+            "css": ["/css/googleStyling.css"],
+            "all_frames": true,
+            "run_at": "document_idle"
+        }
+    ],
+
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
+
+
+
+
+ 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+
+        <div id="firebaseButtons">
+
+            <button id="sendDataButton">send data</button>
+            <button id="getDataButton">get data</button>
+             
+        </div>
+
+        <div id="selectDate">
+        <button id="compareWithAnotherDateGlobally">Porównaj wszystkie frazy z inną datą</button>
+    </div>
+      
+
+    </nav>
+
+    <div id="searchResults">
+        <iframe src="https://www.google.com/search?igu=1&ei=&q=esperal+wrocław"></iframe>
+        <iframe src="https://www.google.com/search?igu=1&ei=&q=detoks+alkoholowy+wrocław"></iframe> 
+        <iframe src="https://www.google.com/search?igu=1&ei=&q=wszywka+alkoholowa+wrocław"></iframe> 
+        <iframe src="https://www.google.com/search?igu=1&ei=&q=odtrucie+alkoholowe+wrocław"></iframe> 
+        <iframe src="https://www.google.com/search?igu=1&ei=&q=leczenie+alkoholizmu+wrocław"></iframe>
+        <iframe src="https://www.google.com/search?igu=1&ei=&q=leczenie+uzależnień+wrocław"></iframe>   
+    </div>
+    <div id="locations">
+        <ul>
+
+
+            <li><button>Wrocław</button></li>
+            <li><button>Poznań</button></li>
+            <li><button>Warszawa</button></li>
+            <li><button>Łódź</button></li>
+            <li><button>Gdańsk</button></li>
+            <li><button>Kraków</button></li>
+            <li><button>Kielce</button></li>
+            <li><button>Katowice</button></li>
+            <li><button>Szczecin</button></li>
+            <li><button>Lublin</button></li>
+            <li><button>Bydgoszcz</button></li>
+
+        </ul>
+
+    </div>
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+    <script type="module" src="/js/firebase.js" defer></script>
+    <script type="module" src="/js/showCurrentTab.js"></script>
+    <script type="module" src="/js/openNewIframe.js"></script>
+ 
+    
+
+</body>
+
+
+</html>

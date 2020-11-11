@@ -1,0 +1,82 @@
+#searchResults, #locations ul, nav, #phraseOptions, #phraseOptions ul{
+  display: flex;
+}
+
+#firebaseButtons{
+  display: none;
+}
+
+#phraseOptions h2{
+  text-transform: capitalize;
+}
+
+#searchResults {
+ 
+  height: 100vh;
+}
+
+iframe {
+  flex: 1;
+ 
+}
+
+#locations {
+
+  background: gray;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+
+}
+
+
+
+#locations li {
+
+  color: black;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+#locations ul {
+   
+  justify-content: space-evenly;
+
+  align-items: center;
+  height: 100px;
+}
+
+body {
+  position: relative;
+
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+nav {
+ 
+  justify-content: space-between;
+}
+
+#phraseOptions{
+ 
+ 
+  justify-content: space-around;
+}
+
+.clickedButton{
+  color: #ff0a0a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: scale(1.3);
+}
